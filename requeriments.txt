@@ -1,0 +1,8 @@
+PyMuPDF
+chromadb 
+langchain 
+sentence-transformers
+openai
+tiktoken
+langchain-community
+langchain_openai
