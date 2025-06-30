@@ -30,7 +30,7 @@ RAG combina recuperação de informações (busca semântica com embeddings) com
 
 ```mermaid
 flowchart TD
-    A[Pergunta do Usuário] --> B[Retriever (Top-k Chunks)]
+    A[Pergunta do Usuário] --> B[Retriever Top-k Chunks]
     B --> C[LLM (GPT)]
     C --> D[Resposta Gerada]
 ```
@@ -51,7 +51,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[Pergunta do Usuário] --> B[Retriever (Chunks Pequenos)]
+    A[Pergunta do Usuário] --> B[Retriever Chunks Pequenos]
     B --> C[Mapeamento para Parent ID]
     C --> D[Recupera Texto Completo (Parent)]
     D --> E[LLM (GPT)]
@@ -74,7 +74,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[Pergunta do Usuário] --> B[Retriever (Top-20 Chunks)]
+    A[Pergunta do Usuário] --> B[Retriever Top-20 Chunks]
     B --> C[LLM Reranker (Avalia Relevância)]
     C --> D[Seleciona Top-N Chunks]
     D --> E[LLM (GPT)]
