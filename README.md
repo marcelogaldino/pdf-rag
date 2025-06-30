@@ -30,9 +30,9 @@ RAG combina recuperação de informações (busca semântica com embeddings) com
 
 ```mermaid
 flowchart TD
-    A[Pergunta do Usuário] --> B[Retriever Top-k Chunks]
-    B --> C[LLM (GPT)]
-    C --> D[Resposta Gerada]
+    A["Input do usuário"] --> B["Retriever: Top-k Chunks"]
+    B --> C["LLM GPT"]
+    C --> D["Resposta Gerada"]
 ```
 
 ✅ **Vantagens**: simples, rápido, fácil de implementar  
@@ -51,11 +51,11 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[Pergunta do Usuário] --> B[Retriever Chunks Pequenos]
-    B --> C[Mapeamento para Parent ID]
-    C --> D[Recupera Texto Completo (Parent)]
-    D --> E[LLM (GPT)]
-    E --> F[Resposta Gerada]
+    A["Pergunta do Usuário"] --> B["Retriever Chunks Pequenos"]
+    B --> C["Mapeamento para Parent ID"]
+    C --> D["Recupera Texto Completo Parent"]
+    D --> E["LLM GPT"]
+    E --> F["Resposta Gerada"]
 ```
 
 ✅ **Vantagens**: preserva contexto completo de seções grandes  
@@ -74,11 +74,11 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[Pergunta do Usuário] --> B[Retriever Top-20 Chunks]
-    B --> C[LLM Reranker (Avalia Relevância)]
-    C --> D[Seleciona Top-N Chunks]
-    D --> E[LLM (GPT)]
-    E --> F[Resposta Gerada]
+    A["Pergunta do Usuário"] --> B["Retriever Top-20 Chunks"]
+    B --> C["LLM Reranker Avalia Relevância"]
+    C --> D["Seleciona Top-N Chunks"]
+    D --> E["LLM GPT"]
+    E --> F["Resposta Gerada"]
 ```
 
 ✅ **Vantagens**: melhora a precisão ao selecionar só os chunks realmente relevantes  
