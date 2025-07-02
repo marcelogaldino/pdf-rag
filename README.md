@@ -1,4 +1,6 @@
-# 📚 PDF RAG 
+# 📚 PDF RAG  
+
+👉 For English instructions, see [README-EN.md](./README-EN.md)
 
 Este projeto implementa **três arquiteturas distintas de RAG (Retrieval-Augmented Generation)**, Naive RAG, Parent RAG e Rerank RAG
 
@@ -120,7 +122,7 @@ Siga os passos abaixo para rodar as arquiteturas de RAG localmente:
 1. **Clone o repositório e acesse a pasta:**
    ```zsh
    git clone <url-do-repo>
-   cd desafio-rag
+   cd pdf-rag
    ```
 
 2. **Crie e ative o ambiente virtual Python:**
@@ -143,7 +145,7 @@ Siga os passos abaixo para rodar as arquiteturas de RAG localmente:
 5. **Configure as variáveis de ambiente:**
     Crie um arquivo `.env` com sua chave da OpenAI:
      ```env
-     OPENAI_API_KEY=sk-...
+     OPENAI_API_KEY=
      ```
 
 6. **Execute o script desejado:**
