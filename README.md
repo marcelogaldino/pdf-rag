@@ -112,6 +112,58 @@ flowchart TD
 
 ---
 
+
+## 🏃‍♂️ Como executar o projeto
+
+Siga os passos abaixo para rodar as arquiteturas de RAG localmente:
+
+1. **Clone o repositório e acesse a pasta:**
+   ```zsh
+   git clone <url-do-repo>
+   cd desafio-rag
+   ```
+
+2. **Crie e ative o ambiente virtual Python:**
+   ```zsh
+   python3 -m venv PY_VENV_RAG
+   source PY_VENV_RAG/bin/activate
+   ```
+
+3. **Instale as dependências:**
+   ```zsh
+   pip install -r requeriments.txt
+   ```
+
+4. **Crie o caminho para armazenar seu pdf:**
+   ```zsh
+   mkdir docs
+   # armazene seu pdf aqui
+   ```
+
+5. **Configure as variáveis de ambiente:**
+    Crie um arquivo `.env` com sua chave da OpenAI:
+     ```env
+     OPENAI_API_KEY=sk-...
+     ```
+
+6. **Execute o script desejado:**
+   Naive RAG:
+     ```zsh
+     python naive-rag.py
+     ```
+   Parent RAG:
+     ```zsh
+     python parent-rag.py
+     ```
+   Rerank RAG:
+     ```zsh
+     python rerank-rag.py
+     ```
+
+7. **Siga as instruções no terminal para inserir sua pergunta.**
+
+---
+
 ## 👤 Autor
 
 Made with ♥ by Marcelo Galdino :wave: [Get in touch!](https://www.linkedin.com/in/marcelogaldino/)
